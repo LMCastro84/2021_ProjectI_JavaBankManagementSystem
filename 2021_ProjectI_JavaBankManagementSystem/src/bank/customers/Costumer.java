@@ -1,5 +1,6 @@
 package bank.customers;
 
+import bank.accounts.Account;
 import java.util.ArrayList;
 
 /**
