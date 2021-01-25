@@ -4,6 +4,6 @@ package bank.cards;
  *
  * @author Castro
  */
-public class DebitCard {
+public class DebitCard extends Card{
 
 }
