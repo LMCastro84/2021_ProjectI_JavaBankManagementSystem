@@ -2,7 +2,7 @@ package bank.customers;
 
 import bank.accounts.Account;
 import bank.accounts.CurrentAccount;
-import bank.cards.Card;
+import bank.cards.DebitCard;
 import java.util.ArrayList;
 
 /**
@@ -49,15 +49,15 @@ public class Costumer {
     /**
      * customer's debit card
      */
-    private Card debitCard;
+    private DebitCard debitCard;
 
     /**
      * customer's list of cards
      */
-    private ArrayList<Card> cardsList;
+    private ArrayList<DebitCard> cardsList;
 
     CurrentAccount currAccount = new CurrentAccount();
-    DebitCard debCard = new DebitCard();
+//    DebitCard debCard = new DebitCard();
 
     public Costumer(String name, String phone, String email, String profession) {
         id++;
@@ -65,10 +65,11 @@ public class Costumer {
         this.phone = phone;
         this.email = email;
         this.profession = profession;
-        this.currentAccount = currAccount.newCurrentAccount();
+//        this.currentAccount = currAccount.newCurrentAccount(); // para o main
         accountsList.add(currentAccount);
-        this.debitCard = debCard.newDebitCard();
+//        this.debitCard = debCard.newDebitCard(); //para o main
         cardsList.add(debitCard);
+        
     }
 
 }
