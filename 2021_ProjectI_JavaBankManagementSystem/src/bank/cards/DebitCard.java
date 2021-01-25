@@ -24,4 +24,9 @@ public class DebitCard {
      * card's list of accounts
      */
     private ArrayList<Account> accountsList;
+
+    public DebitCard(Costumer costumer) {
+        this.id++;
+        this.costumer = costumer;
+    }
 }
