@@ -1,6 +1,6 @@
 package bank.accounts;
 
-import bank.cards.Card;
+import bank.cards.DebitCard;
 import java.util.ArrayList;
 
 /**
@@ -12,6 +12,6 @@ public class CurrentAccount extends Account {
     /**
      * account's list of cards
      */
-    private ArrayList<Card> cardsList;
+    private ArrayList<DebitCard> cardsList;
 
 }
