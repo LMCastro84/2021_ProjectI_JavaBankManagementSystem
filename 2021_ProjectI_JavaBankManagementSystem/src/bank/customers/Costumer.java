@@ -91,4 +91,16 @@ public class Costumer {
         cardsList.add(debitCard);
     }
 
+    /**
+     * print all the information available of the client
+     */
+    public void showClientInfo() {
+        System.out.println("Client number: " + id);
+        System.out.println("Name: " + name);
+        System.out.println("Phone: " + phone);
+        System.out.println("Email: " + email);
+        System.out.println("Profession: " + profession);
+        System.out.print("List of Accounts: " + this.accountsList.toString() + "\n");
+        System.out.print("List of Cards: " + this.cardsList.toString());
+    }
 }
