@@ -11,7 +11,12 @@ import java.util.ArrayList;
 public class CurrentAccount extends Account {
 
     /**
-     * account's list of cards
+     * debit card that can access the account
+     */
+    private DebitCard debitCard;
+
+    /**
+     * account's list of cards that can access the account
      */
     private ArrayList<DebitCard> cardsList;
 
@@ -25,6 +30,16 @@ public class CurrentAccount extends Account {
      */
     public CurrentAccount(Costumer costumer) {
         super(costumer);
+    }
+
+    /**
+     * set debit card that controls the account, and add it to the list of cards
+     *
+     * @param debitCard
+     */
+    public void setDebitCard(DebitCard debitCard) {
+        this.debitCard = debitCard;
+        this.cardsList.add(debitCard);
     }
 
 }
