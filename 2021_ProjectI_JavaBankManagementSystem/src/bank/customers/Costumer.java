@@ -74,6 +74,7 @@ public class Costumer {
 
     /**
      * set the costumer's unique current account
+     *
      * @param currentAccount costumer's current account
      */
     public void setCurrentAccount(CurrentAccount currentAccount) {
@@ -81,11 +82,13 @@ public class Costumer {
     }
 
     /**
-     * set a costumer's debit card
-     * @param debitCard 
+     * set debit card that owned by costumer, and add it to the list of cards
+     *
+     * @param debitCard
      */
     public void setDebitCard(DebitCard debitCard) {
         this.debitCard = debitCard;
+        cardsList.add(debitCard);
     }
 
 }
