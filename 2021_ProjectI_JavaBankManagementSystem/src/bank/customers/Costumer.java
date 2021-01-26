@@ -39,7 +39,7 @@ public class Costumer {
     /**
      * customer's current account
      */
-    private Account currentAccount;
+    private CurrentAccount currentAccount;
 
     /**
      * customer's list of accounts
@@ -69,7 +69,23 @@ public class Costumer {
         accountsList.add(currentAccount);
 //        this.debitCard = debCard.newDebitCard(); //para o main
         cardsList.add(debitCard);
-        
+
+    }
+
+    /**
+     * set the costumer's unique current account
+     * @param currentAccount costumer's current account
+     */
+    public void setCurrentAccount(CurrentAccount currentAccount) {
+        this.currentAccount = currentAccount;
+    }
+
+    /**
+     * set a costumer's debit card
+     * @param debitCard 
+     */
+    public void setDebitCard(DebitCard debitCard) {
+        this.debitCard = debitCard;
     }
 
 }
