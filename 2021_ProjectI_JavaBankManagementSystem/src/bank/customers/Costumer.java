@@ -44,7 +44,7 @@ public class Costumer {
     /**
      * customer's list of accounts
      */
-    private ArrayList<Account> accountsList;
+    private ArrayList<CurrentAccount> accountsList;
 
     /**
      * customer's debit card
