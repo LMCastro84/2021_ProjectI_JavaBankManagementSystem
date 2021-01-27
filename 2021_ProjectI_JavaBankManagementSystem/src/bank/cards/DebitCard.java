@@ -18,6 +18,11 @@ public class DebitCard {
     private static int id = 0;
 
     /**
+     * type of card
+     */
+    private String cardType = "Debit";
+
+    /**
      * card's owner
      */
     private Costumer costumer;
@@ -32,6 +37,11 @@ public class DebitCard {
      */
     private List<Account> accountsList = new ArrayList<>();
 
+    /**
+     * constructor
+     *
+     * @param costumer
+     */
     public DebitCard(Costumer costumer) {
         this.id++;
         this.costumer = costumer;
@@ -44,5 +54,24 @@ public class DebitCard {
      */
     public void setCurrentAccount(CurrentAccount currentAccount) {
         this.currentAccount = currentAccount;
+    }
+
+    /**
+     * id getter
+     *
+     * @return the card unique id
+     */
+    public static int getId() {
+        return id;
+    }
+
+    /**
+     * print the card atributes
+     *
+     * @return information available of the card
+     */
+    @Override
+    public String toString() {
+        return cardType + " Card number " + getId() + ".";
     }
 }
