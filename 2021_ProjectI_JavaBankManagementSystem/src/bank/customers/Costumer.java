@@ -69,12 +69,14 @@ public class Costumer {
     }
 
     /**
-     * set the costumer's unique current account
+     * set the costumer's unique current account, and add it to the list of
+     * cards
      *
      * @param currentAccount costumer's current account
      */
     public void setCurrentAccount(CurrentAccount currentAccount) {
         this.currentAccount = currentAccount;
+        this.accountsList.add(currAccount);
     }
 
     /**
@@ -96,7 +98,8 @@ public class Costumer {
         System.out.println("Phone: " + phone);
         System.out.println("Email: " + email);
         System.out.println("Profession: " + profession);
-        System.out.print("List of Accounts: " + this.accountsList.toString() + "\n");
+
+        System.out.print("List of Accounts: " + this.accountsList.indexOf(0) + "\n");
         System.out.print("List of Cards: " + this.cardsList.toString());
     }
 }
