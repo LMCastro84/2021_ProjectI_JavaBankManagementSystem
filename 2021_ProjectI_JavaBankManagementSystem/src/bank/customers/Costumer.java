@@ -45,7 +45,7 @@ public class Costumer {
     /**
      * customer's list of accounts
      */
-    private List<CurrentAccount> accountsList = new ArrayList<>();
+    private List<Account> accountsList = new ArrayList<>();
 
     /**
      * customer's debit card
@@ -98,8 +98,8 @@ public class Costumer {
         System.out.println("Phone: " + phone);
         System.out.println("Email: " + email);
         System.out.println("Profession: " + profession);
-
-        System.out.print("List of Accounts: " + this.accountsList.indexOf(0) + "\n");
+        System.out.println("List of Accounts: \n Client has " + this.accountsList.size()
+                + " accounts:\n" + this.accountsList.toString());
         System.out.print("List of Cards: " + this.cardsList.toString());
     }
 }
