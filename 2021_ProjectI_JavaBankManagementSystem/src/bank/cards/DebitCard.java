@@ -4,6 +4,7 @@ import bank.accounts.Account;
 import bank.accounts.CurrentAccount;
 import bank.customers.Costumer;
 import java.util.ArrayList;
+import java.util.List;
 
 /**
  *
@@ -29,7 +30,7 @@ public class DebitCard {
     /**
      * card's list of accounts
      */
-    private ArrayList<Account> accountsList;
+    private List<Account> accountsList = new ArrayList<>();
 
     public DebitCard(Costumer costumer) {
         this.id++;
