@@ -3,6 +3,7 @@ package bank.accounts;
 import bank.cards.DebitCard;
 import bank.customers.Costumer;
 import java.util.ArrayList;
+import java.util.List;
 
 /**
  *
@@ -18,7 +19,7 @@ public class CurrentAccount extends Account {
     /**
      * account's list of cards that can access the account
      */
-    private ArrayList<DebitCard> cardsList;
+    private List<DebitCard> cardsList = new ArrayList<>();
 
     public CurrentAccount() {
     }
