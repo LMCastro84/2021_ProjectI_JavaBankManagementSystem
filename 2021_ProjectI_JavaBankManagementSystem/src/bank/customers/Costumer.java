@@ -4,6 +4,7 @@ import bank.accounts.Account;
 import bank.accounts.CurrentAccount;
 import bank.cards.DebitCard;
 import java.util.ArrayList;
+import java.util.List;
 
 /**
  *
@@ -44,7 +45,7 @@ public class Costumer {
     /**
      * customer's list of accounts
      */
-    private ArrayList<CurrentAccount> accountsList;
+    private List<CurrentAccount> accountsList = new ArrayList<>();
 
     /**
      * customer's debit card
@@ -54,7 +55,7 @@ public class Costumer {
     /**
      * customer's list of cards
      */
-    private ArrayList<DebitCard> cardsList;
+    private List<DebitCard> cardsList = new ArrayList<>();
 
     CurrentAccount currAccount = new CurrentAccount();
 //    DebitCard debCard = new DebitCard();
@@ -65,11 +66,6 @@ public class Costumer {
         this.phone = phone;
         this.email = email;
         this.profession = profession;
-//        this.currentAccount = currAccount.newCurrentAccount(); // para o main
-        accountsList.add(currentAccount);
-//        this.debitCard = debCard.newDebitCard(); //para o main
-        cardsList.add(debitCard);
-
     }
 
     /**
@@ -84,11 +80,11 @@ public class Costumer {
     /**
      * set debit card that owned by costumer, and add it to the list of cards
      *
-     * @param debitCard
+     * @param dbtCard
      */
-    public void setDebitCard(DebitCard debitCard) {
-        this.debitCard = debitCard;
-        cardsList.add(debitCard);
+    public void setDebitCard(DebitCard dbtCard) {
+        this.debitCard = dbtCard;
+        this.cardsList.add(dbtCard);
     }
 
     /**
