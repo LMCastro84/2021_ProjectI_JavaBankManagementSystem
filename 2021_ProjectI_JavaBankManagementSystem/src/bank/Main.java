@@ -2,7 +2,7 @@ package bank;
 
 import bank.accounts.CurrentAccount;
 import bank.cards.DebitCard;
-import bank.customers.Costumer;
+import bank.customers.Customer;
 
 /**
  *
@@ -11,7 +11,7 @@ import bank.customers.Costumer;
 public class Main {
 
     public static void main(String[] args) {
-        Costumer cost1 = new Costumer("Castro", "936960352", "castro@gmail.com", "Java Dev");
+        Customer cost1 = new Customer("Castro", "936960352", "castro@gmail.com", "Java Dev");
         CurrentAccount currAcct = new CurrentAccount(cost1);
         DebitCard dbtCard = new DebitCard(cost1);
         cost1.setCurrentAccount(currAcct);
@@ -23,7 +23,7 @@ public class Main {
 
         System.out.println("");
         System.out.println("");
-        Costumer cost2 = new Costumer("Silva", "986966418", "marisa@gmail.com", "BNP");
+        Customer cost2 = new Customer("Silva", "986966418", "marisa@gmail.com", "BNP");
         CurrentAccount currAcct2 = new CurrentAccount(cost2);
         DebitCard dbtCard2 = new DebitCard(cost2);
         cost2.setCurrentAccount(currAcct2);
