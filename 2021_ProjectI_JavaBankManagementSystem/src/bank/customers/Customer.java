@@ -53,6 +53,11 @@ public class Customer {
     protected DebitCard debitCard;
 
     /**
+     * customer's credit card
+     */
+    protected CreditCard creditCard;
+
+    /**
      * customer's list of cards
      */
     protected List<DebitCard> cardsList = new ArrayList<>();
@@ -92,6 +97,10 @@ public class Customer {
     public void setDebitCard(DebitCard dbtCard) {
         this.debitCard = dbtCard;
         this.cardsList.add(dbtCard);
+    }
+
+    public void setCreditCard(CreditCard crdCard) {
+
     }
 
     /**
