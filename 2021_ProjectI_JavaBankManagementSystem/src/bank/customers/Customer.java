@@ -2,6 +2,7 @@ package bank.customers;
 
 import bank.accounts.Account;
 import bank.accounts.CurrentAccount;
+import bank.cards.CreditCard;
 import bank.cards.DebitCard;
 import java.util.ArrayList;
 import java.util.List;
@@ -90,7 +91,7 @@ public class Customer {
     }
 
     /**
-     * set debit card that owned by costumer, and add it to the list of cards
+     * set debit card owned by costumer, and add it to the list of cards
      *
      * @param dbtCard
      */
@@ -99,8 +100,14 @@ public class Customer {
         this.cardsList.add(dbtCard);
     }
 
+    /**
+     * set credit card owned by costumer, and add it to the list of cards
+     *
+     * @param crdCard
+     */
     public void setCreditCard(CreditCard crdCard) {
-
+        this.creditCard = crdCard;
+        this.cardsList.add(crdCard);
     }
 
     /**
