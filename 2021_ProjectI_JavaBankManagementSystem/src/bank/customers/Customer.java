@@ -16,7 +16,7 @@ public class Customer {
     /**
      * unique id customer
      */
-    public static int id = 0;
+    protected static int id = 0;
 
     /**
      * customer's name
