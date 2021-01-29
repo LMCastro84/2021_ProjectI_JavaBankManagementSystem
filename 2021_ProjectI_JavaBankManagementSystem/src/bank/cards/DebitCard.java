@@ -42,7 +42,7 @@ public class DebitCard {
      *
      * @param costumer
      */
-    protected DebitCard(Customer costumer) {
+    public DebitCard(Customer costumer) {
         this.id++;
         this.costumer = costumer;
     }
