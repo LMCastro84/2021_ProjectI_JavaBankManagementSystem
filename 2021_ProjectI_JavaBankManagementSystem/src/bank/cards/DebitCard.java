@@ -2,7 +2,7 @@ package bank.cards;
 
 import bank.accounts.Account;
 import bank.accounts.CurrentAccount;
-import bank.customers.Costumer;
+import bank.customers.Customer;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -25,7 +25,7 @@ public class DebitCard {
     /**
      * card's owner
      */
-    private Costumer costumer;
+    private Customer costumer;
 
     /**
      * current account controled by the debit card
@@ -42,7 +42,7 @@ public class DebitCard {
      *
      * @param costumer
      */
-    public DebitCard(Costumer costumer) {
+    public DebitCard(Customer costumer) {
         this.id++;
         this.costumer = costumer;
     }
