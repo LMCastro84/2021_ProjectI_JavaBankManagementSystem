@@ -20,8 +20,8 @@ public class Main {
         dbtCard.setCurrentAccount(currAcct);
 
         cost1.showClientInfo();
-        
-        
+
+        System.out.println("");
         Costumer cost2 = new Costumer("Silva", "986966418", "marisa@gmail.com", "BNP");
         CurrentAccount currAcct2 = new CurrentAccount(cost2);
         DebitCard dbtCard2 = new DebitCard(cost2);
@@ -29,7 +29,6 @@ public class Main {
         cost2.setDebitCard(dbtCard2);
         currAcct2.setDebitCard(dbtCard2);
         dbtCard2.setCurrentAccount(currAcct2);
-        System.out.println("");
 
         cost2.showClientInfo();
     }
