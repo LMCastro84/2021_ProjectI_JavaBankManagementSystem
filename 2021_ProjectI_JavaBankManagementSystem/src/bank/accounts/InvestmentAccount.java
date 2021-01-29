@@ -20,6 +20,7 @@ public class InvestmentAccount extends Account {
      */
     public InvestmentAccount(Customer costumer) {
         super(costumer);
+        id++;
         this.associatedCost = 5;
     }
 
