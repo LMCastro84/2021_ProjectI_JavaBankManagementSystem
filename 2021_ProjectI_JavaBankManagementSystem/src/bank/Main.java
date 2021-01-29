@@ -22,6 +22,7 @@ public class Main {
         cost1.showClientInfo();
 
         System.out.println("");
+        System.out.println("");
         Costumer cost2 = new Costumer("Silva", "986966418", "marisa@gmail.com", "BNP");
         CurrentAccount currAcct2 = new CurrentAccount(cost2);
         DebitCard dbtCard2 = new DebitCard(cost2);
