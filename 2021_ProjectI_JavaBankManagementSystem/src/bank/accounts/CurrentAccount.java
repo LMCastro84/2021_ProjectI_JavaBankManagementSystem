@@ -1,7 +1,7 @@
 package bank.accounts;
 
 import bank.cards.DebitCard;
-import bank.customers.Costumer;
+import bank.customers.Customer;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -29,7 +29,7 @@ public class CurrentAccount extends Account {
      *
      * @param costumer the owner of the account
      */
-    public CurrentAccount(Costumer costumer) {
+    public CurrentAccount(Customer costumer) {
         super(costumer);
     }
 
