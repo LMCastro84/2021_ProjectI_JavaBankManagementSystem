@@ -8,8 +8,20 @@ import bank.customers.Customer;
  */
 public class CreditCard extends DebitCard {
 
-    public CreditCard(Customer costumer) {
+    /**
+     * ceiling to be setted when credit card is created
+     */
+    private double ceiling;
+
+    /**
+     * constructor
+     *
+     * @param costumer owner of the credit card
+     * @param ceiling of the credit card
+     */
+    public CreditCard(Customer costumer, double ceiling) {
         super(costumer);
+        this.ceiling = ceiling;
     }
 
 }
