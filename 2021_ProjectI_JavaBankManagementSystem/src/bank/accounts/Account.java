@@ -1,6 +1,6 @@
 package bank.accounts;
 
-import bank.customers.Costumer;
+import bank.customers.Customer;
 
 /**
  *
@@ -21,7 +21,7 @@ public class Account {
     /**
      * owner of account
      */
-    private Costumer costumer;
+    private Customer costumer;
 
     /**
      * empty constructor
@@ -34,7 +34,7 @@ public class Account {
      *
      * @param costumer the owner of the account
      */
-    public Account(Costumer costumer) {
+    public Account(Customer costumer) {
         this.id++;
         this.balance = 0;
         this.costumer = costumer;
