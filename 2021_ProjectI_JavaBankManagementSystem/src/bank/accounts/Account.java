@@ -11,17 +11,17 @@ public class Account {
     /**
      * unique id card
      */
-    private static int id = 0;
+    protected static int id = 0;
 
     /**
      * account's balance
      */
-    private double balance;
+    protected double balance;
 
     /**
      * owner of account
      */
-    private Customer costumer;
+    protected Customer costumer;
 
     /**
      * empty constructor
