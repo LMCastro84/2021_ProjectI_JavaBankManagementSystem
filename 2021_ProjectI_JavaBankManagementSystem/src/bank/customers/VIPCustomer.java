@@ -37,10 +37,11 @@ public class VIPCustomer extends Customer {
 
     /**
      * set the costumer's unique current account, and add it to the list of
-     * cards
+     * accounts
      *
-     * @param currentAccount costumer's current account
+     * @param currentAccount
      */
+    @Override
     public void setCurrentAccount(CurrentAccount currentAccount) {
         this.currAccount = currentAccount;
         this.accountsList.add(currentAccount);
