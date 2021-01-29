@@ -15,34 +15,34 @@ public class DebitCard {
     /**
      * unique id card
      */
-    private static int id = 0;
+    protected static int id = 0;
 
     /**
      * type of card
      */
-    private String cardType = "Debit";
+    protected String cardType = "Debit";
 
     /**
      * card's owner
      */
-    private Customer costumer;
+    protected Customer costumer;
 
     /**
      * current account controled by the debit card
      */
-    private CurrentAccount currentAccount;
+    protected CurrentAccount currentAccount;
 
     /**
      * card's list of accounts
      */
-    private List<Account> accountsList = new ArrayList<>();
+    protected List<Account> accountsList = new ArrayList<>();
 
     /**
      * constructor
      *
      * @param costumer
      */
-    public DebitCard(Customer costumer) {
+    protected DebitCard(Customer costumer) {
         this.id++;
         this.costumer = costumer;
     }
