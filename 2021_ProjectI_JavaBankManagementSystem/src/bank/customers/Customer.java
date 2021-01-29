@@ -40,7 +40,7 @@ public class Customer {
     /**
      * customer's current account
      */
-    private CurrentAccount currentAccount;
+    CurrentAccount currAccount = new CurrentAccount();
 
     /**
      * customer's list of accounts
@@ -56,9 +56,6 @@ public class Customer {
      * customer's list of cards
      */
     private List<DebitCard> cardsList = new ArrayList<>();
-
-    CurrentAccount currAccount = new CurrentAccount();
-//    DebitCard debCard = new DebitCard();
 
     /**
      * contructor
@@ -83,8 +80,8 @@ public class Customer {
      * @param currentAccount costumer's current account
      */
     public void setCurrentAccount(CurrentAccount currentAccount) {
-        this.currentAccount = currentAccount;
-        this.accountsList.add(currAccount);
+        this.currAccount = currentAccount;
+        this.accountsList.add(currentAccount);
     }
 
     /**
