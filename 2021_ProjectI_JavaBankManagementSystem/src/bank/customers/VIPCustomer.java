@@ -2,6 +2,7 @@ package bank.customers;
 
 import bank.accounts.CurrentAccount;
 import bank.accounts.InvestmentAccount;
+import bank.cards.DebitCard;
 
 /**
  *
@@ -45,6 +46,17 @@ public class VIPCustomer extends Customer {
     public void setCurrentAccount(CurrentAccount currentAccount) {
         this.currAccount = currentAccount;
         this.accountsList.add(currentAccount);
+    }
+
+    /**
+     * set debit card that owned by costumer, and add it to the list of cards
+     *
+     * @param dbtCard
+     */
+    @Override
+    public void setDebitCard(DebitCard dbtCard) {
+        this.debitCard = dbtCard;
+        this.cardsList.add(dbtCard);
     }
 
 }
