@@ -21,6 +21,7 @@ public class SavingsAccount extends Account {
      */
     public SavingsAccount(Customer costumer, double interest) {
         super(costumer);
+        id++;
         this.interest = interest;
     }
 
