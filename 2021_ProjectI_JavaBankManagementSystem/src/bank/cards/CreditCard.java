@@ -1,6 +1,6 @@
 package bank.cards;
 
-import bank.customers.Costumer;
+import bank.customers.Customer;
 
 /**
  *
@@ -8,7 +8,7 @@ import bank.customers.Costumer;
  */
 public class CreditCard extends DebitCard {
 
-    public CreditCard(Costumer costumer) {
+    public CreditCard(Customer costumer) {
         super(costumer);
     }
 
