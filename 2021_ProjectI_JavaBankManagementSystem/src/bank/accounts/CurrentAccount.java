@@ -31,6 +31,7 @@ public class CurrentAccount extends Account {
      */
     public CurrentAccount(Customer costumer) {
         super(costumer);
+        id++;
     }
 
     /**
