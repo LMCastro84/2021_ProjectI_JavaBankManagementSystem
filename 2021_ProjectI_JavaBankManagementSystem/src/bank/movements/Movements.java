@@ -7,8 +7,7 @@ package bank.movements;
 public interface Movements extends Transfer {
 
     /**
-     * deposit ammount on an account
+     * withdraw ammount on an account
      */
-    public void deposit();
-
+    public void withdraw();
 }
