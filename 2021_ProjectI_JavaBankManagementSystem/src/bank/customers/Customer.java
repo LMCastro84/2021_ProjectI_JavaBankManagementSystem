@@ -20,42 +20,42 @@ public class Customer {
     /**
      * customer's name
      */
-    private String name;
+    protected String name;
 
     /**
      * customer's phone'
      */
-    private String phone;
+    protected String phone;
 
     /**
      * customer's email
      */
-    private String email;
+    protected String email;
 
     /**
      * customer's profession
      */
-    private String profession;
+    protected String profession;
 
     /**
      * customer's current account
      */
-    CurrentAccount currAccount = new CurrentAccount();
+    protected CurrentAccount currAccount = new CurrentAccount();
 
     /**
      * customer's list of accounts
      */
-    private List<Account> accountsList = new ArrayList<>();
+    protected List<Account> accountsList = new ArrayList<>();
 
     /**
      * customer's debit card
      */
-    private DebitCard debitCard;
+    protected DebitCard debitCard;
 
     /**
      * customer's list of cards
      */
-    private List<DebitCard> cardsList = new ArrayList<>();
+    protected List<DebitCard> cardsList = new ArrayList<>();
 
     /**
      * contructor
