@@ -43,7 +43,7 @@ public class DebitCard {
      * @param costumer
      */
     public DebitCard(Customer costumer) {
-        this.id++;
+        id++;
         this.costumer = costumer;
     }
 
