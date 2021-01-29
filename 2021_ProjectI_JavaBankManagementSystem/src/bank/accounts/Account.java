@@ -35,7 +35,7 @@ public class Account {
      * @param costumer the owner of the account
      */
     public Account(Customer costumer) {
-        this.id++;
+        id++;
         this.balance = 0;
         this.costumer = costumer;
     }
