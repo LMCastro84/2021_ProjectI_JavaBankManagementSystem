@@ -21,6 +21,7 @@ public class CreditCard extends DebitCard {
      */
     public CreditCard(Customer costumer, double ceiling) {
         super(costumer);
+        id++;
         this.ceiling = ceiling;
     }
 
