@@ -59,4 +59,20 @@ public class VIPCustomer extends Customer {
         this.cardsList.add(dbtCard);
     }
 
+    /**
+     * print all the information available of the client
+     */
+    @Override
+    public void showClientInfo() {
+        System.out.println("Client number: " + id);
+        System.out.println("Name: " + name);
+        System.out.println("Phone: " + phone);
+        System.out.println("Email: " + email);
+        System.out.println("Profession: " + profession);
+        System.out.println("Account Manager: " + accountManager);
+        System.out.println("List of Accounts: \n Client has " + this.accountsList.size()
+                + " accounts:\n" + this.accountsList.toString());
+        System.out.print("List of Cards: " + this.cardsList.toString());
+    }
+
 }
