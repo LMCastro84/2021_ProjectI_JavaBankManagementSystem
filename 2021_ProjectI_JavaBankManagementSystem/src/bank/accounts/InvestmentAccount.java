@@ -1,12 +1,13 @@
 package bank.accounts;
 
 import bank.customers.Customer;
+import bank.movements.Transfer;
 
 /**
  *
  * @author Castro
  */
-public class InvestmentAccount extends Account {
+public class InvestmentAccount extends Account implements Transfer {
 
     /**
      * the associated cost to maintain the account
@@ -22,6 +23,20 @@ public class InvestmentAccount extends Account {
         super(costumer);
         id++;
         this.associatedCost = 5;
+    }
+
+    /**
+     * transfers between two current accounts
+     */
+    @Override
+    public void normalTransfer() {
+    }
+
+    /**
+     * transfers between diferent type of accounts
+     */
+    @Override
+    public void difAcctTypeTransfer() {
     }
 
 }
