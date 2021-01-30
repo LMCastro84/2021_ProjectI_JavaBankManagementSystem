@@ -3,6 +3,7 @@ package bank.cards;
 import bank.accounts.Account;
 import bank.accounts.CurrentAccount;
 import bank.customers.Customer;
+import bank.movements.Movements;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -10,7 +11,7 @@ import java.util.List;
  *
  * @author Castro
  */
-public class DebitCard {
+public class DebitCard implements Movements{
 
     /**
      * unique id card
@@ -73,5 +74,21 @@ public class DebitCard {
     @Override
     public String toString() {
         return cardType + " Card number " + getId() + ".";
+    }
+
+    @Override
+    public void withdraw() {
+    }
+
+    @Override
+    public void normalTransfer() {
+    }
+
+    @Override
+    public void difAcctTypeTransfer() {
+    }
+
+    @Override
+    public void deposit() {
     }
 }
