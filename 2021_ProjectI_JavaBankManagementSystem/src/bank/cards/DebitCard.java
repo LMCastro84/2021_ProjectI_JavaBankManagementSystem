@@ -76,18 +76,30 @@ public class DebitCard implements Movements{
         return cardType + " Card number " + getId() + ".";
     }
 
+    /**
+     * withdraw ammount on an account
+     */
     @Override
     public void withdraw() {
     }
 
+    /**
+     * transfers between two current accounts
+     */
     @Override
     public void normalTransfer() {
     }
 
+    /**
+     * transfers between diferent type of accounts
+     */
     @Override
     public void difAcctTypeTransfer() {
     }
 
+    /**
+     * ammount to be deposited in account
+     */
     @Override
     public void deposit() {
     }
