@@ -1,12 +1,14 @@
 package bank.accounts;
 
 import bank.customers.Customer;
+import bank.movements.Deposit;
+import bank.movements.Transfer;
 
 /**
  *
  * @author Castro
  */
-public class SavingsAccount extends Account {
+public class SavingsAccount extends Account implements Transfer, Deposit {
 
     /**
      * interest to be setted when credit card is created
@@ -23,6 +25,27 @@ public class SavingsAccount extends Account {
         super(costumer);
         id++;
         this.interest = interest;
+    }
+
+    /**
+     * transfers between two current accounts
+     */
+    @Override
+    public void normalTransfer() {
+    }
+
+    /**
+     * transfers between diferent type of accounts
+     */
+    @Override
+    public void difAcctTypeTransfer() {
+    }
+
+    /**
+     * mmount to be deposited in account
+     */
+    @Override
+    public void deposit() {
     }
 
 }
