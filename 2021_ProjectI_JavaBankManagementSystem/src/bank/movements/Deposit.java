@@ -6,4 +6,9 @@ package bank.movements;
  */
 public interface Deposit {
 
+    /**
+     * ammount to be deposited in account
+     */
+    public void deposit();
+
 }
