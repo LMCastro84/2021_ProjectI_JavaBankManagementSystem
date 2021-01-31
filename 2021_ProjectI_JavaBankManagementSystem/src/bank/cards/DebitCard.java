@@ -11,7 +11,7 @@ import java.util.List;
  *
  * @author Castro
  */
-public class DebitCard implements Movements{
+public class DebitCard implements Movements {
 
     /**
      * unique id card
@@ -37,6 +37,12 @@ public class DebitCard implements Movements{
      * card's list of accounts
      */
     protected List<Account> accountsList = new ArrayList<>();
+
+    /**
+     * empty constructor
+     */
+    public DebitCard() {
+    }
 
     /**
      * constructor
