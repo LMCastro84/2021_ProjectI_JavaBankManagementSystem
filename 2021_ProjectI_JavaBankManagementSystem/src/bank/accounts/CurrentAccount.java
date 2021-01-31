@@ -28,8 +28,6 @@ public class CurrentAccount extends Account implements Movements {
      */
     protected List<DebitCard> cardsList = new ArrayList<>();
 
-    Customer emptyCustomer = new Customer();
-
     public CurrentAccount() {
     }
 
