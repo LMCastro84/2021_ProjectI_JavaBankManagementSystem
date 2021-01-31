@@ -119,7 +119,7 @@ public class Customer {
      * @param trmAcct customer's term account
      */
     public void setTermAccount(TermAccount trmAcct) {
-        this.terAccount = trmAcct;
+        this.termAccount = trmAcct;
         this.accountsList.add(trmAcct);
     }
 
