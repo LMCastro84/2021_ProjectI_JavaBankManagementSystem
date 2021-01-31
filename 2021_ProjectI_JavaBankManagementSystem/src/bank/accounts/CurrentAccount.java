@@ -28,6 +28,8 @@ public class CurrentAccount extends Account implements Movements {
      */
     protected List<DebitCard> cardsList = new ArrayList<>();
 
+    Customer emptyCustomer = new Customer();
+
     public CurrentAccount() {
     }
 
@@ -79,10 +81,17 @@ public class CurrentAccount extends Account implements Movements {
     /**
      * transfers between two current accounts
      */
-    @Override
-    public void normalTransfer() {
+    public void normalTransfer(double amount, int numRecAcct) {
+        do {
+            if (amount <= this.balance) {
+                this.balance -= amount;
+//                emptyCustomer. //find destination customer on main class
+            } else {
+                System.out.println("Your account doesn't have enough balance ("
+                        + amount + " €) to execute the withdrawal");
+            }
+        } while (!(amount <= this.balance));
     }
-
 
     /**
      * ammount to be deposited in account
@@ -93,6 +102,10 @@ public class CurrentAccount extends Account implements Movements {
 
     @Override
     public void withdraw() {
+    }
+
+    @Override
+    public void normalTransfer() {
     }
 
 }
