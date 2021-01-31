@@ -13,8 +13,4 @@ public interface Transfer {
      */
     public void normalTransfer();
 
-    /**
-     * transfers between diferent type of accounts
-     */
-    public void difAcctTypeTransfer();
 }
