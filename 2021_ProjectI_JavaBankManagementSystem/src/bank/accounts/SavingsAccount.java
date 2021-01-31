@@ -41,13 +41,6 @@ public class SavingsAccount extends Account implements Transfer, Deposit {
     }
 
     /**
-     * transfers between diferent type of accounts
-     */
-    @Override
-    public void difAcctTypeTransfer() {
-    }
-
-    /**
      * mmount to be deposited in account
      */
     @Override
