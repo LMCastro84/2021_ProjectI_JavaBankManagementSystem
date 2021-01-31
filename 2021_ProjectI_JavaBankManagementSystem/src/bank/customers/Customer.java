@@ -3,6 +3,7 @@ package bank.customers;
 import bank.accounts.Account;
 import bank.accounts.CurrentAccount;
 import bank.accounts.SavingsAccount;
+import bank.accounts.TermAccount;
 import bank.cards.CreditCard;
 import bank.cards.DebitCard;
 import java.util.ArrayList;
@@ -105,6 +106,16 @@ public class Customer {
     public void setSavingsAccount(SavingsAccount savAcct) {
         this.savingsAccount = savAcct;
         this.accountsList.add(savAcct);
+    }
+
+    /**
+     * set a term account of the customer, and add it to the list of accounts
+     *
+     * @param trmAcct customer's term account
+     */
+    public void setTermAccount(TermAccount trmAcct) {
+        this.terAccount = trmAcct;
+        this.accountsList.add(trmAcct);
     }
 
     /**
