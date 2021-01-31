@@ -97,13 +97,6 @@ public class DebitCard implements Movements {
     }
 
     /**
-     * transfers between diferent type of accounts
-     */
-    @Override
-    public void difAcctTypeTransfer() {
-    }
-
-    /**
      * ammount to be deposited in account
      */
     @Override
