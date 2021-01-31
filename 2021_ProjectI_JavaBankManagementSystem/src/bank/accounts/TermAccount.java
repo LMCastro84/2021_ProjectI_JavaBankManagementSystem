@@ -15,6 +15,12 @@ public class TermAccount extends Account implements Transfer {
     private double termDeposit;
 
     /**
+     * empty constructor
+     */
+    public TermAccount() {
+    }
+
+    /**
      * constructor
      *
      * @param costumer the owner of the account
