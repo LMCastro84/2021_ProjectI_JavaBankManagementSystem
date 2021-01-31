@@ -76,6 +76,12 @@ public class Customer {
     protected List<DebitCard> cardsList = new ArrayList<>();
 
     /**
+     * empty cutomer
+     */
+    public Customer() {
+    }
+
+    /**
      * contructor
      *
      * @param name
