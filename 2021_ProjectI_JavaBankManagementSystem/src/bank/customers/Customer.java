@@ -51,6 +51,11 @@ public class Customer {
     protected SavingsAccount savingsAccount = new SavingsAccount();
 
     /**
+     * customer's term(s) account(s)
+     */
+    protected TermAccount termAccount = new TermAccount();
+
+    /**
      * customer's list of accounts
      */
     protected List<Account> accountsList = new ArrayList<>();
