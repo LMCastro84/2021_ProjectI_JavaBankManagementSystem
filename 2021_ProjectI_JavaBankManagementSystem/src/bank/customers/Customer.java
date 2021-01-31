@@ -2,6 +2,7 @@ package bank.customers;
 
 import bank.accounts.Account;
 import bank.accounts.CurrentAccount;
+import bank.accounts.SavingsAccount;
 import bank.cards.CreditCard;
 import bank.cards.DebitCard;
 import java.util.ArrayList;
@@ -88,6 +89,17 @@ public class Customer {
     public void setCurrentAccount(CurrentAccount currentAccount) {
         this.currAccount = currentAccount;
         this.accountsList.add(currentAccount);
+    }
+
+    /**
+     * set a savings account of the customer, and add it to the list off
+     * accounts
+     *
+     * @param savAcct costumer's saving account
+     */
+    public void setSavingsAccount(SavingsAccount savAcct) {
+        this.savingsAccount = savAcct;
+        this.accountsList.add(savAcct);
     }
 
     /**
