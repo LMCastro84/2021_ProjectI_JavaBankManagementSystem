@@ -46,6 +46,17 @@ public class CurrentAccount extends Account implements Movements {
     }
 
     /**
+     * set credit card that controls the account (among other thins) and add it
+     * to the list of cards
+     *
+     * @param crdCard
+     */
+    public void setCreditCard(CreditCard crdCard) {
+        this.creditCard = crdCard;
+        this.cardsList.add(crdCard);
+    }
+
+    /**
      * withdraw ammount on an account
      */
     @Override
