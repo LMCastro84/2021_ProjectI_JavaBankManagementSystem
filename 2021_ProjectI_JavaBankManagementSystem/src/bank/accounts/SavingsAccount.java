@@ -16,6 +16,12 @@ public class SavingsAccount extends Account implements Transfer, Deposit {
     private double interest;
 
     /**
+     * empty constructor
+     */
+    public SavingsAccount() {
+    }
+
+    /**
      * constructor
      *
      * @param costumer the owner of the account
