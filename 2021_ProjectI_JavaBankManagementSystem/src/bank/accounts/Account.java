@@ -21,7 +21,7 @@ public class Account {
     /**
      * owner of account
      */
-    protected Customer costumer;
+    protected Customer customer;
 
     /**
      * empty constructor
@@ -37,7 +37,7 @@ public class Account {
     public Account(Customer costumer) {
         id++;
         this.balance = 0;
-        this.costumer = costumer;
+        this.customer = costumer;
     }
 
     /**
