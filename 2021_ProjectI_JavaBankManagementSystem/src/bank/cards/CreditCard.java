@@ -14,6 +14,12 @@ public class CreditCard extends DebitCard {
     private double ceiling;
 
     /**
+     * empty constructor
+     */
+    public CreditCard() {
+    }
+
+    /**
      * constructor
      *
      * @param costumer owner of the credit card
