@@ -65,8 +65,15 @@ public class CurrentAccount extends Account implements Movements {
     /**
      * withdraw ammount on an account
      */
-    @Override
-    public void withdraw() {
+    public void withdraw(double amount) {
+        do {
+            if (amount <= this.balance) {
+                this.balance -= amount;
+            } else {
+                System.out.println("Your account doesn't have enough balance ("
+                        + amount + " €) to execute the withdrawal");
+            }
+        } while (!(amount <= this.balance));
     }
 
     /**
@@ -76,18 +83,16 @@ public class CurrentAccount extends Account implements Movements {
     public void normalTransfer() {
     }
 
-    /**
-     * transfers between diferent type of accounts
-     */
-    @Override
-    public void difAcctTypeTransfer() {
-    }
 
     /**
      * ammount to be deposited in account
      */
     @Override
     public void deposit() {
+    }
+
+    @Override
+    public void withdraw() {
     }
 
 }
