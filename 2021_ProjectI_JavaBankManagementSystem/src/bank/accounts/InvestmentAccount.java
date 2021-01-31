@@ -31,12 +31,4 @@ public class InvestmentAccount extends Account implements Transfer {
     @Override
     public void normalTransfer() {
     }
-
-    /**
-     * transfers between diferent type of accounts
-     */
-    @Override
-    public void difAcctTypeTransfer() {
-    }
-
 }
