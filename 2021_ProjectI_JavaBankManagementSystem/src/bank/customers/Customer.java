@@ -45,6 +45,11 @@ public class Customer {
     protected CurrentAccount currAccount = new CurrentAccount();
 
     /**
+     * customer's saving(s) account(s)
+     */
+    protected SavingsAccount savingsAccount = new SavingsAccount();
+
+    /**
      * customer's list of accounts
      */
     protected List<Account> accountsList = new ArrayList<>();
