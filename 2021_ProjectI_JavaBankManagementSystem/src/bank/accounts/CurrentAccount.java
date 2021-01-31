@@ -1,5 +1,6 @@
 package bank.accounts;
 
+import bank.cards.CreditCard;
 import bank.cards.DebitCard;
 import bank.customers.Customer;
 import bank.movements.Movements;
@@ -15,12 +16,12 @@ public class CurrentAccount extends Account implements Movements {
     /**
      * debit card that can access the account
      */
-    private DebitCard debitCard;
+    protected DebitCard debitCard;
 
     /**
      * account's list of cards that can access the account
      */
-    private List<DebitCard> cardsList = new ArrayList<>();
+    protected List<DebitCard> cardsList = new ArrayList<>();
 
     public CurrentAccount() {
     }
