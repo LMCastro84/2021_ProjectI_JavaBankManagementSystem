@@ -19,6 +19,11 @@ public class CurrentAccount extends Account implements Movements {
     protected DebitCard debitCard;
 
     /**
+     * credit card that can access the account (among other things)
+     */
+    protected CreditCard creditCard;
+
+    /**
      * account's list of cards that can access the account
      */
     protected List<DebitCard> cardsList = new ArrayList<>();
