@@ -39,11 +39,4 @@ public class TermAccount extends Account implements Transfer {
     public void normalTransfer() {
     }
 
-    /**
-     * transfers between diferent type of accounts
-     */
-    @Override
-    public void difAcctTypeTransfer() {
-    }
-
 }
