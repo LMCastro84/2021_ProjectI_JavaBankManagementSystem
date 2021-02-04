@@ -36,7 +36,6 @@ public class TermAccount extends Account implements Transfer {
      * transfers between two current accounts
      */
     @Override
-    public void normalTransfer() {
+    public void normalTransfer(double amount, int numRecAcct) {
     }
-
 }
