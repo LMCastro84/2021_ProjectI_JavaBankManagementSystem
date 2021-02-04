@@ -44,7 +44,7 @@ public class SavingsAccount extends Account implements Transfer, Deposit {
      * mmount to be deposited in account
      */
     @Override
-    public void deposit() {
+    public void deposit(double amount) {
     }
 
 }
