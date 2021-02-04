@@ -162,4 +162,14 @@ public class Customer {
                 + " accounts:\n" + this.accountsList.toString());
         System.out.print("List of Cards: " + this.cardsList.toString());
     }
+
+    /**
+     * get the unique current account of customer
+     *
+     * @return current account
+     */
+    public CurrentAccount getCurrAccount() {
+        return currAccount;
+    }
+
 }
