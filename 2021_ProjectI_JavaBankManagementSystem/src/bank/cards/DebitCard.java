@@ -93,7 +93,7 @@ public class DebitCard implements Movements {
      * transfers between two current accounts
      */
     @Override
-    public void normalTransfer() {
+    public void normalTransfer(double amount, int numRecAcct) {
     }
 
     /**
