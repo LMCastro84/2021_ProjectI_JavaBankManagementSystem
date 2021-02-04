@@ -95,10 +95,6 @@ public class CurrentAccount extends Account implements Movements {
      * ammount to be deposited in account
      */
     @Override
-    public void deposit() {
-    }
-
-    @Override
-    public void withdraw() {
+    public void deposit(double amount) {
     }
 }
