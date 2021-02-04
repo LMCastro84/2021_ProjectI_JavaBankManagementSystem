@@ -101,9 +101,4 @@ public class CurrentAccount extends Account implements Movements {
     @Override
     public void withdraw() {
     }
-
-    @Override
-    public void normalTransfer() {
-    }
-
 }
