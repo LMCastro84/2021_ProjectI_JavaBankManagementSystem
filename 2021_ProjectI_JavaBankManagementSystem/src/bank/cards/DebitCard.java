@@ -86,7 +86,7 @@ public class DebitCard implements Movements {
      * withdraw ammount on an account
      */
     @Override
-    public void withdraw() {
+    public void withdraw(double amount) {
     }
 
     /**
@@ -100,6 +100,6 @@ public class DebitCard implements Movements {
      * ammount to be deposited in account
      */
     @Override
-    public void deposit() {
+    public void deposit(double amount) {
     }
 }
