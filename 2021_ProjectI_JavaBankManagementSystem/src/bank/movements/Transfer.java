@@ -1,7 +1,5 @@
 package bank.movements;
 
-import bank.accounts.CurrentAccount;
-
 /**
  *
  * @author Castro
