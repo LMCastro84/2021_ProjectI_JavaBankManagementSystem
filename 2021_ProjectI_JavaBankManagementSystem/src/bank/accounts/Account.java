@@ -1,6 +1,8 @@
 package bank.accounts;
 
 import bank.customers.Customer;
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  *
@@ -22,6 +24,11 @@ public class Account {
      * owner of account
      */
     protected Customer customer;
+
+    /**
+     * list of all the accounts in the bank
+     */
+    public static List<Account> generalAccountsList = new ArrayList<>();
 
     /**
      * empty constructor
