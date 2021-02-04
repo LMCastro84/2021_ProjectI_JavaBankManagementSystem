@@ -96,5 +96,6 @@ public class CurrentAccount extends Account implements Movements {
      */
     @Override
     public void deposit(double amount) {
+        this.balance += amount;
     }
 }
