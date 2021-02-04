@@ -22,7 +22,8 @@ public class Main {
         dbtCard.setCurrentAccount(currAcct);
         CreditCard creditCard1 = new CreditCard(cost1, 50);
         creditCard1.setCurrentAccount(currAcct);
-
+        cost1.showClientInfo();
+        
         System.out.println("");
         System.out.println("");
         Customer cost2 = new VIPCustomer("Silva", "986966418", "marisa@gmail.com", "BNP", "Castro Manager");
