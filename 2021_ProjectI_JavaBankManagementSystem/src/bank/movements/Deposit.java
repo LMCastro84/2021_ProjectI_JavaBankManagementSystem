@@ -9,6 +9,6 @@ public interface Deposit {
     /**
      * ammount to be deposited in account
      */
-    public void deposit();
-
+    default public void deposit(double amount) {
+    }
 }
