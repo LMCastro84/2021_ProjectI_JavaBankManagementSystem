@@ -23,6 +23,7 @@ public class InvestmentAccount extends Account implements Transfer {
         super(costumer);
         id++;
         this.associatedCost = 5;
+        Account.generalAccountsList.add(this);
     }
 
     /**
