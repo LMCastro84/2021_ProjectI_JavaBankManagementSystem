@@ -11,6 +11,6 @@ public interface Transfer {
     /**
      * transfers between two current accounts
      */
-    public void normalTransfer();
-
+    default public void normalTransfer(double amount, int numRecAcct) {
+    }
 }
