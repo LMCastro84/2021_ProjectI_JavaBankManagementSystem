@@ -39,6 +39,7 @@ public class CurrentAccount extends Account implements Movements {
     public CurrentAccount(Customer costumer) {
         super(costumer);
         id++;
+        Account.generalAccountsList.add(this);
     }
 
     /**
@@ -83,7 +84,7 @@ public class CurrentAccount extends Account implements Movements {
         do {
             if (amount <= this.balance) {
                 this.balance -= amount;
-//                emptyCustomer. //find destination customer on main class
+
             } else {
                 System.out.println("Your account doesn't have enough balance ("
                         + amount + " €) to execute the withdrawal");
