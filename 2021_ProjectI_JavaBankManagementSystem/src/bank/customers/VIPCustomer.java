@@ -32,7 +32,6 @@ public class VIPCustomer extends Customer {
     public VIPCustomer(String name, String phone, String email, String profession,
             String accountManager) {
         super(name, phone, email, profession);
-        id++;
         this.accountManager = accountManager;
     }
 
