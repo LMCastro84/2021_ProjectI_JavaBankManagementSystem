@@ -23,7 +23,7 @@ public class Main {
         CreditCard creditCard1 = new CreditCard(cost1, 50);
         creditCard1.setCurrentAccount(currAcct);
         cost1.showClientInfo();
-        
+
         System.out.println("");
         System.out.println("");
         Customer cost2 = new VIPCustomer("Silva", "986966418", "marisa@gmail.com", "BNP", "Castro Manager");
@@ -33,7 +33,10 @@ public class Main {
         cost2.setDebitCard(dbtCard2);
         currAcct2.setDebitCard(dbtCard2);
         dbtCard2.setCurrentAccount(currAcct2);
-
         cost2.showClientInfo();
+
+        System.out.println("\nTests:");
+        cost1.getCurrAccount().deposit(100);
+        System.out.println(cost1.getCurrAccount().getBalance());
     }
 }
