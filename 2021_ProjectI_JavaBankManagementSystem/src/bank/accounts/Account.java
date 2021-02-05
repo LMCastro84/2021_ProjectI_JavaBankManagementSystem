@@ -75,6 +75,15 @@ public class Account {
     }
 
     /**
+     * set the new balance, by subtracting an amount
+     *
+     * @param balance
+     */
+    public void subtractBalance(double balance) {
+        this.balance -= balance;
+    }
+
+    /**
      * print the account atributes
      *
      * @return the information available of the account
