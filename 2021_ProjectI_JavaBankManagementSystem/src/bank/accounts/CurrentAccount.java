@@ -91,7 +91,7 @@ public class CurrentAccount extends Account implements Movements {
                     if (generalAccountsList.get(i).getId() == idRecAcct) {
                         double destinyAcctBalance = generalAccountsList.get(i).getBalance();
                         destinyAcctBalance += amount;
-                        generalAccountsList.get(i).setBalance(balance);
+                        generalAccountsList.get(i).addBalance(balance);
                     }
                 }
             } else {
