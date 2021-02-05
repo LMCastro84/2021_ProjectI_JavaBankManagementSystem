@@ -66,7 +66,7 @@ public class Account {
     }
 
     /**
-     * set the new balance
+     * set the new balance, by adding an amount
      *
      * @param balance
      */
