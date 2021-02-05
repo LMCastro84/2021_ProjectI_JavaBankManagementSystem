@@ -79,15 +79,25 @@ public class CurrentAccount extends Account implements Movements {
 
     /**
      * transfers between two current accounts
+     *
+     * @param amount quantity of money to be transfered
+     * @param idRecAcct account id of the Account that will recieve the amount
      */
-    public void normalTransfer(double amount, int numRecAcct) {
+    public void normalTransfer(double amount, int idRecAcct) {
         do {
             if (amount <= this.balance) {
                 this.balance -= amount;
-
+                for (int i = 0; i < Account.generalAccountsList.size(); i++) {
+                    if (generalAccountsList.get(i).getId() == idRecAcct) {
+                        double destinyAcctBalance = generalAccountsList.get(i).getBalance();
+                        destinyAcctBalance += amount;
+                        generalAccountsList.get(i).setBalance(balance);
+                    }
+                }
             } else {
                 System.out.println("Your account doesn't have enough balance ("
                         + amount + " €) to execute the withdrawal");
+                this.balance += amount;
             }
         } while (!(amount <= this.balance));
     }
