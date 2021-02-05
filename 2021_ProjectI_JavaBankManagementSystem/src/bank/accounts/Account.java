@@ -52,7 +52,7 @@ public class Account {
      *
      * @return the account unique id
      */
-    public static int getId() {
+    public int getId() {
         return id;
     }
 
@@ -63,6 +63,15 @@ public class Account {
      */
     public double getBalance() {
         return balance;
+    }
+
+    /**
+     * set the new balance
+     *
+     * @param balance
+     */
+    public void addBalance(double balance) {
+        this.balance += balance;
     }
 
     /**
