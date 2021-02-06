@@ -163,13 +163,6 @@ public class Customer {
         System.out.print("List of Cards: " + this.cardsList.toString());
     }
 
-    /**
-     * get the unique current account of customer
-     *
-     * @return current account
-     */
-    public CurrentAccount getCurrAccount() {
-        return currAccount;
-    }
+
 
 }
