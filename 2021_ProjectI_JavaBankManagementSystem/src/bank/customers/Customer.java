@@ -163,6 +163,12 @@ public class Customer {
         System.out.print("List of Cards: " + this.cardsList.toString());
     }
 
-
-
+    /**
+     * customer's list of accounts
+     *
+     * @return a list with all the accounts of the customer
+     */
+    public List<Account> getAccountsList() {
+        return accountsList;
+    }
 }
