@@ -29,7 +29,6 @@ public class SavingsAccount extends Account implements Transfer, Deposit {
      */
     public SavingsAccount(Customer costumer, double interest) {
         super(costumer);
-        id++;
         this.interest = interest;
         Account.generalAccountsList.add(this);
     }
