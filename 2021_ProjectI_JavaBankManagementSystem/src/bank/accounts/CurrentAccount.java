@@ -38,7 +38,6 @@ public class CurrentAccount extends Account implements Movements {
      */
     public CurrentAccount(Customer costumer) {
         super(costumer);
-        id++;
         Account.generalAccountsList.add(this);
     }
 
