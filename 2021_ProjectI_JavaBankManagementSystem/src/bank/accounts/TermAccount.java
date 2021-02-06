@@ -28,7 +28,6 @@ public class TermAccount extends Account implements Transfer {
      */
     public TermAccount(Customer costumer, double termDeposit) {
         super(costumer);
-        id++;
         this.termDeposit = termDeposit;
         Account.generalAccountsList.add(this);
     }
