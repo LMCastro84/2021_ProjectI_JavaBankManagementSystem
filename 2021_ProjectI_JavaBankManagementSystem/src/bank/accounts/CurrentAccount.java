@@ -28,11 +28,6 @@ public class CurrentAccount extends Account implements Movements {
      */
     protected List<DebitCard> cardsList = new ArrayList<>();
 
-    /**
-     * stores the unique customer's current account
-     */
-    protected List<CurrentAccount> uniqueCurrentAccount = new ArrayList<>();
-
     public CurrentAccount() {
     }
 
@@ -43,7 +38,7 @@ public class CurrentAccount extends Account implements Movements {
      */
     public CurrentAccount(Customer costumer) {
         super(costumer);
-        uniqueCurrentAccount.add(this);
+        Account.generalAccountsList.add(this);
     }
 
     /**
