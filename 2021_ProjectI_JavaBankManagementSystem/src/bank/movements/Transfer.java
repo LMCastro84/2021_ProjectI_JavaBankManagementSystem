@@ -12,6 +12,6 @@ public interface Transfer {
      * @param amount quantity of money to be transfered
      * @param numRecAcct account id of the Account that will recieve the amount
      */
-    default public void normalTransfer(double amount, int numRecAcct) {
+    default public void transferBetween(double amount, int numRecAcct) {
     }
 }
