@@ -37,7 +37,7 @@ public class SavingsAccount extends Account implements Transfer, Deposit {
      * transfers between two current accounts
      */
     @Override
-    public void normalTransfer(double amount, int numRecAcct) {
+    public void transferBetween(double amount, int numRecAcct) {
     }
 
     /**
