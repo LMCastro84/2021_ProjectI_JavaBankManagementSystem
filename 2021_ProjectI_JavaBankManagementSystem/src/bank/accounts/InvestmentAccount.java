@@ -29,6 +29,6 @@ public class InvestmentAccount extends Account implements Transfer {
      * transfers between two current accounts
      */
     @Override
-    public void normalTransfer(double amount, int numRecAcct) {
+    public void transferBetween(double amount, int numRecAcct) {
     }
 }
