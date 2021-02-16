@@ -19,4 +19,8 @@ public class Menu {
         System.out.println("5 - Advance one month;");
         System.out.println("6 - Exit.");
     }
+    
+    public static void showClientMenu(){
+            System.out.println("Test");
+    }
 }
