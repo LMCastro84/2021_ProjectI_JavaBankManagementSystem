@@ -36,7 +36,6 @@ public class Main {
         cost2.showClientInfo();
 
         System.out.println("\nTests:");
-        cost1.getCurrAccount().deposit(100);
-        System.out.println(cost1.getCurrAccount().getBalance());
+
     }
 }
