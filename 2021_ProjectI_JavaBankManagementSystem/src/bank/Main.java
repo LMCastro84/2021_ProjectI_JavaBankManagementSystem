@@ -13,6 +13,8 @@ import bank.customers.VIPCustomer;
 public class Main {
 
     public static void main(String[] args) {
+        Menu.showMainMenu();
+        
         Customer cost1 = new Customer("Castro", "936960352", "castro@gmail.com", "Java Dev");
         CurrentAccount currAcct = new CurrentAccount(cost1);
         DebitCard dbtCard = new DebitCard(cost1);
