@@ -5,6 +5,7 @@ import bank.cards.CreditCard;
 import bank.cards.DebitCard;
 import bank.customers.Customer;
 import bank.customers.VIPCustomer;
+import java.util.Scanner;
 
 /**
  *
@@ -13,8 +14,33 @@ import bank.customers.VIPCustomer;
 public class Main {
 
     public static void main(String[] args) {
-        Menu.showMainMenu();
-        
+        int option = 0;
+        Scanner in = new Scanner(System.in);
+        do {
+            Menu.showMainMenu();
+
+            option = in.nextInt();
+            switch (option) {
+                case 1:
+                    System.out.println("Option 1;");
+                    break;
+                case 2:
+                    System.out.println("Option 2;");
+                    break;
+                case 3:
+                    System.out.println("Option 3;");
+                    break;
+                case 4:
+                    System.out.println("Option 4;");
+                    break;
+                case 5:
+                    System.out.println("Option 5;");
+                    break;
+                case 6:
+                    System.out.println("Option 6;");
+            }
+        } while (option != 6);
+
         Customer cost1 = new Customer("Castro", "936960352", "castro@gmail.com", "Java Dev");
         CurrentAccount currAcct = new CurrentAccount(cost1);
         DebitCard dbtCard = new DebitCard(cost1);
