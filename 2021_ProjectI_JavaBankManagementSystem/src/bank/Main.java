@@ -22,7 +22,10 @@ public class Main {
             option = in.nextInt();
             switch (option) {
                 case 1:
-                    System.out.println("Option 1;");
+                    option = 0;
+                    Menu.showClientMenu();
+                    option = in.nextInt();
+                    
                     break;
                 case 2:
                     System.out.println("Option 2;");
