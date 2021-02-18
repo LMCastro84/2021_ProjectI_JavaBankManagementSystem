@@ -23,9 +23,30 @@ public class Main {
             switch (option) {
                 case 1:
                     option = 0;
-                    Menu.showClientMenu();
+                    Menu.showCustomerMenu();
                     option = in.nextInt();
-                    
+                    switch (option) {
+                        case 1:
+                            String name,
+                             phone,
+                             email,
+                             profession;
+                            System.out.println("New Regular Customer");
+                            System.out.print("Insert Customer's name: ");
+                            name = in.nextLine();
+                            System.out.print("Insert Customer's phone: ");
+                            phone = in.nextLine();
+                            System.out.print("Insert Customer's email: ");
+                            email = in.nextLine();
+                            System.out.print("Insert Customer's profession: ");
+                            profession = in.nextLine();
+                            Customer newCustomer = new Customer(name, phone, email, profession);
+                            break;
+                        case 2:
+                            break;
+                        case 3:
+                            break;
+                    }
                     break;
                 case 2:
                     System.out.println("Option 2;");
