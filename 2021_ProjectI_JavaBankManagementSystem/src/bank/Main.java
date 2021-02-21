@@ -53,6 +53,31 @@ public class Main {
                             newCustomer.showClientInfo();
                             break;
                         case 2:
+                            String name,
+                             phone,
+                             email,
+                             profession;
+                            System.out.println("New Regular Customer");
+                            System.out.print("Insert Customer's name: ");
+                            name = in.nextLine();
+                            name = in.nextLine();
+                            System.out.print("Insert Customer's phone: ");
+                            phone = in.nextLine();
+                            System.out.print("Insert Customer's email: ");
+                            email = in.nextLine();
+                            System.out.print("Insert Customer's profession: ");
+                            profession = in.nextLine();
+                            Customer newCustomer = new Customer(name, phone, email, profession);
+                            CurrentAccount currAcct = new CurrentAccount(newCustomer);
+                            DebitCard dbtCard = new DebitCard(newCustomer);
+                            newCustomer.setCurrentAccount(currAcct);
+                            newCustomer.setDebitCard(dbtCard);
+                            currAcct.setDebitCard(dbtCard);
+                            dbtCard.setCurrentAccount(currAcct);
+                            CreditCard creditCard = new CreditCard(newCustomer, 50);
+                            creditCard.setCurrentAccount(currAcct);
+                            newCustomer.showClientInfo();
+
                             break;
                         case 3:
                             break;
@@ -97,6 +122,5 @@ public class Main {
 //        cost2.showClientInfo();
 //
 //        System.out.println("\nTests:");
-
     }
 }
