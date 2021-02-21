@@ -34,6 +34,7 @@ public class Main {
                             System.out.println("New Regular Customer");
                             System.out.print("Insert Customer's name: ");
                             name = in.nextLine();
+                            name = in.nextLine();
                             System.out.print("Insert Customer's phone: ");
                             phone = in.nextLine();
                             System.out.print("Insert Customer's email: ");
